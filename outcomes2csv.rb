@@ -33,7 +33,7 @@ end
 csv = CSV.generate(col_sep: "\t") do |csv|
   csv << data.first.keys
 
-  data.each do |d|
+  data.sort {|x,y| x[:url] <=> y[:url]}.each do |d|
     csv << d.values
   end
 end
