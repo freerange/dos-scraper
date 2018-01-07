@@ -6,7 +6,7 @@ require 'nokogiri'
 require 'open-uri'
 require 'csv'
 
-search_results_url = 'https://www.digitalmarketplace.service.gov.uk/digital-outcomes-and-specialists/opportunities?lot=digital-outcomes&status=live'
+search_results_url = 'https://www.digitalmarketplace.service.gov.uk/digital-outcomes-and-specialists/opportunities?lot=digital-outcomes&status=live&location=london&location=south+east+england&location=offsite'
 
 doc = Nokogiri::HTML(open(search_results_url))
 
